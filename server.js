@@ -1,5 +1,6 @@
 const container = document.querySelector("#data-container");
 const dropMenu = document.querySelector("#navbarDropdownMenuLink");
+const para = document.querySelector("#info-para");
 
 var delay;
 function myFunction() {
@@ -46,6 +47,9 @@ function generatebars(num = 30) {
 // asynchronous function to perform "Selection Sort"
 async function SelectionSort() {
   dropMenu.innerText = "Selection Sort";
+
+  para.innerHTML =
+    "<span>Selection sort</span> sorts an array by repeatedly finding the minimum element from unsorted part and putting it at the beginning. Selection sort has <span>minimum number of swaps</span> compared to all other sorting algorithms <br><br> <span>Time Complexity : O(n<sup>2</sup>) </span> <br> <span>Space Complexity : O(1) </span>";
 
   let bars = document.querySelectorAll(".bar");
   // Assign 0 to min_idx
@@ -133,6 +137,10 @@ function swap(el1, el2) {
 
 async function BubbleSort() {
   dropMenu.innerText = "Bubble Sort";
+
+  para.innerHTML =
+    "<span>Bubble Sort</span> is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order.The pass through the list is repeated until the list is sorted. The algorithm, which is a comparison sort, is named for the way smaller or larger elements <span>bubble</span> to the <span>topmost</span> of the list. Although the algorithm is simple, it is too slow and impractical for most problems. <br><br> <span>Time Complexity : O(n<sup>2</sup>) </span> <br> <span>Space Complexity : O(1) </span>";
+
   let bars = document.querySelectorAll(".bar");
 
   for (var i = 0; i < bars.length; i += 1) {
@@ -171,6 +179,10 @@ async function BubbleSort() {
 
 async function InsertionSort() {
   dropMenu.innerText = "Insertion Sort";
+
+  para.innerHTML =
+    "<span>Insertion sort</span> is a simple sorting algorithm that works similar to the way you <span>sort playing cards</span> in your hands. The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed at the correct position in the sorted part.It works <span>best when array is already sorted</span>. <br><br> <span>Time Complexity : O(n<sup>2</sup>) </span> <br> <span>Space Complexity : O(1) </span>";
+
   let bars = document.querySelectorAll(".bar");
 
   // Provide lightgreen colour to 0th bar

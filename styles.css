@@ -7,7 +7,7 @@ body {
   width: 1.5vw;
   position: absolute;
   left: 20%;
-  bottom: 25%;
+  bottom: 5%;
   background-color: rgb(0, 183, 255);
   transition: 0.2s all ease;
 }
@@ -21,7 +21,7 @@ body {
 #mySlider {
   width: 50%;
   transform: rotate(180deg);
-  margin: 5% 25%;
+  margin: 2% 25%;
 }
 input[type="range"] {
   height: 6px;
@@ -52,4 +52,16 @@ a {
 
 .disabled {
   pointer-events: none;
+}
+
+#info {
+  padding: 1% 8%;
+}
+
+p {
+  font-size: larger;
+}
+span {
+  color: #6f459e;
+  font-weight: bold;
 }

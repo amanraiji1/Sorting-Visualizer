@@ -5,7 +5,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
+    <link
+      rel="shortcut icon"
+      href="https://icons-for-free.com/download-icon-sorting-131964784834761041_512.png"
+      type="image/x-icon"
+    />
     <!-- CSS only -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
@@ -82,16 +86,20 @@
         </div>
       </div>
     </nav>
-    <div id="data-container"></div>
+
+    <div class="container-fluid" id="info">
+      <p id="info-para"></p>
+    </div>
 
     <input
       type="range"
       id="mySlider"
-      value="800"
+      value="1"
       min="1"
       max="1000"
       onchange="myFunction()"
     />
+    <div id="data-container"></div>
   </body>
 
   <!-- linking index.js -->
